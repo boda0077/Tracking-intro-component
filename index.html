@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Project tracking intro component</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <div
+      id="rightBG"
+      class="absolute top-0 right-0 w-[50dvw] h-[65dvh] max-md:h-[25rem] bg-[#EEF3F6] rounded-bl-[5rem] z-[-100]"></div>
+
+    <nav
+      class="flex justify-between items-center py-8 mx-[6rem] max-xl:mx-[4rem] max-sm:mx-4">
+      <img class="w-10" src="./images/logo.svg" alt="Tracking LOGO" />
+
+      <div
+        id="menu"
+        class="max-md:bg-white max-md:hidden max-md:shadow-2xl max-md:absolute max-md:top-[6rem] max-md:py-6 max-md:left-[0] max-md:right-0 max-md:transform-[-50%_50%] max-md:mx-8">
+        <ul class="flex gap-8 items-center max-md:flex-col max-md:gap-4">
+          <li
+            class="px-2 py-4 relative before:absolute before:left-0 before:bottom-0 before:h-1 before:w-0 hover:before:w-[100%] before:bg-gray-600 before:rounded-lg before:transition-all">
+            <a
+              href="#"
+              class="uppercase text-[1.05rem] text-[#242942] font-BarlowCon font-bold tracking-[0.19rem]"
+              >product</a
+            >
+          </li>
+          <li
+            class="px-2 py-4 relative before:absolute before:left-0 before:bottom-0 before:h-1 before:w-0 hover:before:w-[100%] before:bg-gray-600 before:rounded-lg before:transition-all">
+            <a
+              href="#"
+              class="uppercase text-[1.05rem] text-[#242942] font-BarlowCon font-bold tracking-[0.19rem]"
+              >features</a
+            >
+          </li>
+          <li
+            class="px-2 py-4 relative before:absolute before:left-0 before:bottom-0 before:h-1 before:w-0 hover:before:w-[100%] before:bg-gray-600 before:rounded-lg before:transition-all">
+            <a
+              href="#"
+              class="uppercase text-[1.05rem] text-[#242942] font-BarlowCon font-bold tracking-[0.19rem]"
+              >pricing</a
+            >
+          </li>
+          <li
+            class="w-2 h-2 bg-[#A0A1AC] rounded-full max-md:rounded-none max-md:w-[80%] max-md:h-[0.1rem]"></li>
+          <li
+            class="px-2 py-4 relative before:absolute before:left-0 before:bottom-0 before:h-1 before:w-0 hover:before:w-[100%] before:bg-gray-400 before:rounded-lg before:transition-all">
+            <a
+              href="#"
+              class="uppercase text-[1.05rem] text-[#A0A1AC] font-BarlowCon font-bold tracking-[0.19rem]"
+              >login</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!--mobile menu -->
+
+      <div
+        id="menuBtn"
+        class="flex-col py-2 px-2 gap-1 cursor-pointer hidden max-md:flex justify-center items-center transition-[0.3s]">
+        <span
+          id="first"
+          class="w-9 h-1 bg-black rounded-lg transition-[0.3s]"></span>
+        <span
+          id="second"
+          class="w-9 h-1 bg-black rounded-lg transition-[0.8s]"></span>
+        <span
+          id="third"
+          class="w-9 h-1 bg-black rounded-lg transition-[0.3s]"></span>
+      </div>
+    </nav>
+
+    <main
+      class="overflow-x-hidden grid grid-cols-2 max-md:grid-cols-1 py-[3rem] items-center px-[6rem] max-lg:px-[4rem] max-md:px-[2.9rem] max-md:gap-[5rem] max-md:py-0 max-md:pt-[7rem] max-md:pb-[3rem]">
+      <div
+        class="grid justify-start max-md:justify-center py-6 max-md:text-start h-auto max-md:row-start-2">
+        <div class="flex items-center">
+          <span
+            class="text-white bg-black py-[0.1rem] px-3 mr-2 rounded-xl items-center font-BarlowCon uppercase font-bold"
+            >New</span
+          >
+          <span
+            class="text-gray-400 tracking-[2px] text-clamp font-BarlowCon uppercase"
+            >Monogranph dashnpard</span
+          >
+        </div>
+
+        <div class="mt-5 mb-[4rem] max-md:mb-[2rem]">
+          <h1
+            class="mb-6 leading-[5rem] max-lg:leading-[3rem] max-md:leading-[2.5rem] font-BarlowCon font-bold text-clampTwo uppercase">
+            Powerful insights into your team
+          </h1>
+          <p
+            class="text-clampThree pr-[15rem] max-[1345px]:pr-20 max-xl:pr-[12rem] max-lg:pr-[8rem] max-md:pr-[4rem] max-sm:pr-0 text-gray-400 tracking-[2px] font-BarlowCon">
+            Project planning and time tracking for aglite teams
+          </p>
+        </div>
+
+        <div class="flex flex-wrap max-md:w-[120%] items-center">
+          <span
+            class="text-white bg-[hsl(0_100%_68%)] cursor-pointer my-4 py-4 px-6 mr-6 max-lg:py-3 max-lg:px-5 max-lg:mr-3 max-md:mr-2 text-clamp font-Barlow font-bold border-[hsl(0_100%_68%)] uppercase rounded hover:scale-105 transition-all"
+            >schedule a demo</span
+          >
+          <span
+            class="text-gray-400 uppercase font-BarlowCon tracking-[4px] max-md:tracking-[2px]"
+            >to see a preview</span
+          >
+        </div>
+      </div>
+
+      <div
+        class="w-[1440px] max-lg:w-[800px] max-md:w-[700px] max-[600px]:w-[500px]">
+        <img
+          class="relative left-[3rem] max-lg:left-[2rem] max-md:left-0 z-[-10] max-[400px]:right-6"
+          src="./images/illustration-devices.svg"
+          alt="illustration devices img " />
+      </div>
+    </main>
+
+    <script src="./main.js "></script>
+  </body>
+</html>
